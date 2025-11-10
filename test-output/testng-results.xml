@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-06T20:13:07 IST" name="Suite" finished-at="2025-11-06T20:13:54 IST" duration-ms="46576">
+    <groups>
+      <group name="systemTest">
+        <method signature="CreateCampaignTest.createCampaignWithExpectedCloseDateTest()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" name="createCampaignWithExpectedCloseDateTest" class="campaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithStatusTest()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" name="createCampaignWithStatusTest" class="campaignTest.CreateCampaignTest"/>
+      </group> <!-- systemTest -->
+      <group name="regression">
+        <method signature="CreateContactTest.createContactWithMandatoryFieldsTest()[pri:0, instance:contactTest.CreateContactTest@5890e879]" name="createContactWithMandatoryFieldsTest" class="contactTest.CreateContactTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" name="createCampaignWithMandatoryFieldsTest" class="campaignTest.CreateCampaignTest"/>
+        <method signature="CreateProductTest.createProductWithMandatoryFieldsTest()[pri:0, instance:productTest.CreateProductTest@7d9d0818]" name="createProductWithMandatoryFieldsTest" class="productTest.CreateProductTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-11-06T20:13:07 IST" name="Test" finished-at="2025-11-06T20:13:54 IST" duration-ms="46576">
+      <class name="campaignTest.CreateCampaignTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:33 IST" name="beforeClass" finished-at="2025-11-06T20:13:35 IST" duration-ms="1783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:35 IST" name="beforeMethod" finished-at="2025-11-06T20:13:40 IST" duration-ms="4591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createCampaignWithExpectedCloseDateTest()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:40 IST" name="createCampaignWithExpectedCloseDateTest" finished-at="2025-11-06T20:13:41 IST" duration-ms="1884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaignWithExpectedCloseDateTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:41 IST" name="afterMethod" finished-at="2025-11-06T20:13:43 IST" duration-ms="2010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:43 IST" name="beforeMethod" finished-at="2025-11-06T20:13:45 IST" duration-ms="1888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createCampaignWithMandatoryFieldsTest()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:45 IST" name="createCampaignWithMandatoryFieldsTest" finished-at="2025-11-06T20:13:47 IST" duration-ms="1440" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Toast Msg Verifiction Succeded expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Toast Msg Verifiction Succeded expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at campaignTest.CreateCampaignTest.createCampaignWithMandatoryFieldsTest(CreateCampaignTest.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaignWithMandatoryFieldsTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:47 IST" name="afterMethod" finished-at="2025-11-06T20:13:49 IST" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:49 IST" name="beforeMethod" finished-at="2025-11-06T20:13:50 IST" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createCampaignWithStatusTest()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:50 IST" name="createCampaignWithStatusTest" finished-at="2025-11-06T20:13:52 IST" duration-ms="1535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaignWithStatusTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:52 IST" name="afterMethod" finished-at="2025-11-06T20:13:53 IST" duration-ms="1220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:campaignTest.CreateCampaignTest@451001e5]" started-at="2025-11-06T20:13:53 IST" name="afterClass" finished-at="2025-11-06T20:13:54 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- campaignTest.CreateCampaignTest -->
+      <class name="productTest.CreateProductTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:productTest.CreateProductTest@7d9d0818]" started-at="2025-11-06T20:13:22 IST" name="beforeClass" finished-at="2025-11-06T20:13:24 IST" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:productTest.CreateProductTest@7d9d0818]" started-at="2025-11-06T20:13:24 IST" name="beforeMethod" finished-at="2025-11-06T20:13:29 IST" duration-ms="4802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createProductWithMandatoryFieldsTest()[pri:0, instance:productTest.CreateProductTest@7d9d0818]" started-at="2025-11-06T20:13:29 IST" name="createProductWithMandatoryFieldsTest" finished-at="2025-11-06T20:13:31 IST" duration-ms="2399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProductWithMandatoryFieldsTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:productTest.CreateProductTest@7d9d0818]" started-at="2025-11-06T20:13:31 IST" name="afterMethod" finished-at="2025-11-06T20:13:33 IST" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:productTest.CreateProductTest@7d9d0818]" started-at="2025-11-06T20:13:33 IST" name="afterClass" finished-at="2025-11-06T20:13:33 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- productTest.CreateProductTest -->
+      <class name="contactTest.CreateContactTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:07 IST" name="beforeSuite" finished-at="2025-11-06T20:13:07 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:07 IST" name="beforeTest" finished-at="2025-11-06T20:13:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:07 IST" name="beforeClass" finished-at="2025-11-06T20:13:10 IST" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:10 IST" name="beforeMethod" finished-at="2025-11-06T20:13:14 IST" duration-ms="3973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createContactWithMandatoryFieldsTest()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:14 IST" name="createContactWithMandatoryFieldsTest" finished-at="2025-11-06T20:13:20 IST" duration-ms="5951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithMandatoryFieldsTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:20 IST" name="afterMethod" finished-at="2025-11-06T20:13:22 IST" duration-ms="1670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:22 IST" name="afterClass" finished-at="2025-11-06T20:13:22 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:54 IST" name="afterTest" finished-at="2025-11-06T20:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:contactTest.CreateContactTest@5890e879]" started-at="2025-11-06T20:13:54 IST" name="afterSuite" finished-at="2025-11-06T20:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- contactTest.CreateContactTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
