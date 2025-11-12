@@ -5,8 +5,6 @@
 		<run>
 
 			<include name="smoke"></include>
-			<include name="regression"></include>
-			<include name="systemTest"></include>
 
 		</run>
 	</groups>
